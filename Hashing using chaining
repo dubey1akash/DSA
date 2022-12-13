@@ -1,3 +1,13 @@
+hash table is implemented by address table method which is basically index of array to fill key and value so that access become fast
+load factor is  n/m where m no of slot is hash table and n is no of keys to be inserted
+it tell what percentage going to be collide so if n = m then u can say no collison right as it will distribute key uniformly right
+so that u can understand load factor concept like when it should be good or bad depending upon n and m
+here remember m is taken prime so that less collison happened as dividing give less remainder things of all the digit last
+also u can't take m as 2^m and 10 ^m where m can be anything but after taking these 2 it always point to last digit only so better not take this as m
+u can do math to understand this is true
+
+
+
 // C++ program to demonstrate implementation of our 
 // own hash table with chaining for collision detection 
 #include<bits/stdc++.h>
