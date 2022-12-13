@@ -1,0 +1,10 @@
+so hashing can be implement in 2 ways one way is chaining and another is open addressing 
+basically these 2 are used to handle collison handling only but we have to see which one is better
+hashing is just function whose work is to handle collison but at the end we are using this function to create a hash table
+here we use only not linked list and we consider to take size of an array equal to or > gr than total keys
+advantage is cache friendly as address referece we have
+this (open addressing hashing) implemented many way like linear probing and quadratic and double hashing 
+linear probing is linearly search for an empty space in array which key u have find collided with ur hashing function key%7 this is hash fun
+here i see in linear probing there is problem of clustering which is basically ur deleting element or inserting element to next empty index as linear probing do but it is
+also creating issue of clustering here.so making these operationg costly again search insert and delete
+solve these issue with quadrating and double hashing
