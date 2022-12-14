@@ -9,3 +9,5 @@ here i see in linear probing there is problem of clustering which is basically u
 also creating issue of clustering here.so making these operationg costly again search insert and delete
 solve these issue with quadratic and double hashing
 load factor should be 1 i think which same no of table as no of key this is criteria for open addressing
+no of probes or should i say the empty space i should find it would be alpha=1/1-alpha alpha is load factor it should less than one 
+it tell how many time on average we required to reach the empty space after we have given some alpha which tell how many percentage of space is filled in hash table
