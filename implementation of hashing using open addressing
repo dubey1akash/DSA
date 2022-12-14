@@ -7,4 +7,5 @@ this (open addressing hashing) implemented many way like linear probing and quad
 linear probing is linearly search for an empty space in array which key u have find collided with ur hashing function key%7 this is hash fun
 here i see in linear probing there is problem of clustering which is basically ur deleting element or inserting element to next empty index as linear probing do but it is
 also creating issue of clustering here.so making these operationg costly again search insert and delete
-solve these issue with quadrating and double hashing
+solve these issue with quadratic and double hashing
+load factor should be 1 i think which same no of table as no of key this is criteria for open addressing
