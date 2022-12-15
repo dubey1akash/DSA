@@ -1,0 +1,11 @@
+so basically they stored in continous location not like the way they represent so address is continous
+and they r store in row major and column manjor order which mean u keep 1 row then next 2 row then 3 row or 1 column first 2 column then 3rd column so on
+that is way but in continous only this is pattern
+c++ follow row order storation 
+curly bracket is optional which mean only one u can use and put all the element it will work accordingly of ur decloration of a[m][n]
+but it is not recommended although
+and u can omit the first declartion of size in matrix that is optional it figure out auto for big size also 3 3 4 by 4 but only first one u can omit
+vector created matrix are not cache friend as it does not store continously as normal c++ does it store at diff loc
+vector arr[i] size of column and  arr give size of row
+here need to use double pointer to pass it the another function so that it work
+but vector can be used for making this thing easy only cache is problem
