@@ -1,0 +1,5 @@
+a =97 ascii
+A=65
+java uses utf which is for all language and used 16 bit to store character while c++ uses 8 bit for character storage
+if u subtract a from any character u get 0 and so on so to store that 26 character
+in c char ="gfg" here u put last character as /0 so leng increse by 1 for stlen and cout by name then whole content get printed as cout has this capability
