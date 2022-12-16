@@ -1,0 +1,4 @@
+it is implemented in hashing internally
+remember if tried to search something which is not present it will insert that so use carefully at that time
+not find function do this thing only direct access when u m[key] then if it is not present it will insert not find function
+
