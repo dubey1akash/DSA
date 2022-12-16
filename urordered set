@@ -1,5 +1,6 @@
 it is implemented by hashing internally
 and it take average 0(1)
+it only has keys only not like keys and value pair like hashing
 #include <bits/stdc++.h> 
 using namespace std; 
 
