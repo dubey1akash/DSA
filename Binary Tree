@@ -1,0 +1,28 @@
+degree of node how many children a node has
+breadth first search (which is level by level)
+depth first search (which is proorder,postorder or inorder)
+
+---------------------------------------INORDER----------
+#include <bits/stdc++.h>
+using namespace std;
+
+struct Node  
+{ 
+  int key; 
+  struct Node *left; 
+  struct Node *right; 
+  Node(int k){
+      key=k;
+      left=right=NULL;
+  }
+};
+
+void inorder(Node *root){
+    if(root!=NULL){
+        inorder(root->left);
+        cout<<root->key<<" ";
+        inorder(root->right);    
+    }
+}
+
+---------------------
