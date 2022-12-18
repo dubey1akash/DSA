@@ -25,4 +25,22 @@ void inorder(Node *root){
     }
 }
 
----------------------
+--------------------- preorder ----------------------------
+void preorder(Node *root){
+    if(root!=NULL){
+        cout<<root->key<<" ";
+        preorder(root->left);
+        preorder(root->right);    
+    }
+}  
+
+
+----------------------------------- postorder -----------------------------------------------
+
+void postorder(Node *root){
+    if(root!=NULL){
+        postorder(root->left);
+        postorder(root->right);
+        cout<<root->key<<" ";
+    }
+}  
