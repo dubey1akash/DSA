@@ -1,0 +1,67 @@
+In cotainer it is implemented in set , map ,multiset,multimap in particular self balancing binary tree here he said u want to have this situation to 
+make the operation fast to logn as height of tree is not skewed to search then it is logn but u do not maintain balanced tree then it would be
+like normal binary tree which is like time is height of the tree
+it is used to store distinct element is based on idea of binary search and which basically mean left of it smaller than roo and right of it larger than root
+it
+
+struct Node  
+{ 
+  int key; 
+  struct Node *left; 
+  struct Node *right; 
+  Node(int k){
+      key=k;
+      left=right=NULL;
+  }
+};
+
+j-------------------------------------search
+
+bool search(Node *root, int x){
+    if(root==NULL)
+        return false;
+    if(root->key==x)
+        return true;
+    else if(root->key>x){
+        return search(root->left,x);
+    }else{
+        return search(root->right,x);
+    }
+} 
+
+--------------------- insert -recursive
+Node *insert(Node *root, int x){
+    if(root==NULL)
+        return new Node(x);
+    if(root->key<x)
+        root->right=insert(root->right,x);
+    else if(root->key>x)
+        root->left=insert(root->left,x);
+    return root;
+}
+
+---iterative---------------------------------------------------------------
+
+
+Node *insert(Node *root, int x){
+    Node *temp=new Node(x);
+    Node *parent=NULL,*curr=root;
+    while(curr!=NULL){
+        parent=curr;
+        if(curr->key>x)
+            curr=curr->left;
+        else if(curr->key<x)
+            curr=curr->right;
+        else
+            return root;
+    }
+    if(parent==NULL)
+        return temp;
+    if(parent->key>x)
+        parent->left=temp;
+    else
+        parent->right=temp;
+    return root;
+} 
+
+
