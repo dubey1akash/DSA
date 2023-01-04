@@ -1,0 +1,24 @@
+graph is data sturucture which store data in the form vertex and edges.
+it 2 types are directed and undirected graph directed graph point to some vertex in one way using edges while undirected point to vertex in both way 
+it has 2 properties regarding the directed graph indegree which is no of edges pointed to this vertex 
+2.one is outdegree no of edges going out from this vertex
+
+in undirected graph for a vertex and there is not fixed type of definition like indegree out here just degree is used to tell a vertex has degree of what no how much in 
+terms of indegree or outdegree.
+
+maximum no of edges in directed graph in not self connected graph  |v| * (|v|-1)
+and in undirected graph |v| * (|v|-1)/2 whole upon 2 this is not only v-1
+
+
+more term in graph
+walk a walk is just a step going to one vertex to another is called walk which is connected to 2nd vertex 
+path is special type of walk where no repetition is allowed
+some book used walk as path and path as simple path remember this
+
+cyclic graph is graph when u begin to 1 vertex and reach the same vertex so this is called
+
+acyclic graph which not contain a cycle
+dag (directed ascyclic graph) used a lot is graph so remember this also
+
+weighted graph is graph where weight is assigned to edges.
+it could be directed and undirected 
