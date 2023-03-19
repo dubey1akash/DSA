@@ -1,0 +1,9 @@
+//get i the bit and lastmost on the right side bit is 0 no and then 1....2...3..so on for i
+//given n=5 ||or any no  and i want to find the 2nd bit of this number or any
+
+
+int getithbit(int n,int i){
+    int mask=1<<i;
+    return (n&mask)>0 ? 1 : 0;
+    
+}
