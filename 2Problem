@@ -1,0 +1,29 @@
+//creating adjacency matrix we create matrix
+// of size  v*v 
+// and when representing 1 vertex to another vertex we just put 1 as value in matrix to 
+//let us know that there is edge b/w these 2 vertex
+//one property of undirected graph in presentation of matrix it has symmetric representation basically meaning that 
+//left of matrix b/w down after middle upper part it will contain same formation up and down below middle 
+//as it has both connection onward and backward
+
+ Graph(int numVertices) {
+    this->numVertices = numVertices;
+    adjMatrix = new bool*[numVertices];
+    for (int i = 0; i < numVertices; i++) {
+      adjMatrix[i] = new bool[numVertices];
+      for (int j = 0; j < numVertices; j++)
+        adjMatrix[i][j] = false;
+    }
+  }
+
+  // Add edges
+  void addEdge(int i, int j) {
+      if((i>=0 && i<numVertices)&&(j>=0 && j<numVertices))
+         { 
+             adjMatrix[i][j] = true;
+            adjMatrix[j][i] = true;
+         }
+      else{
+        cout<<"Enter a valid edge case"<<endl;
+    }
+  }
