@@ -1,5 +1,4 @@
-# dsa
+# DSA
 
-important data structure and algorithm implementation as i did in my practice for interview 
-save it for easy reference 
-language used in c++
+Some  DSA Problem which i solved using c++
+Here i am Writing Problem Statement and their Solutions
