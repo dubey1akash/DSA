@@ -4,6 +4,6 @@ n=? i=3 clear 3 bit from the end in the n
 *******************************************************************************/
 
 void clearithbit(int n,int i){
-    int mask=~(1<<i);
+    int mask=~(1<<i);   //making this run it just make 00100=11011 and doing and give the result which bit want to clear 
     return (n&mask);
 }
