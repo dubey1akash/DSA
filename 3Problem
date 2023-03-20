@@ -1,0 +1,9 @@
+/******************************************************************************
+how to clear ith bit from given number starting from end 0 and 1 and 2 so on 
+n=? i=3 clear 3 bit from the end in the n
+*******************************************************************************/
+
+void clearithbit(int n,int i){
+    int mask=~(1<<i);
+    return (n&mask);
+}
