@@ -1,72 +1,10 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@dubey1akash 
-Ayu-99
-/
-Data-Structures
-Public
-Fork your own copy of Ayu-99/Data-Structures
-Code
-Issues
-Pull requests
-12
-Actions
-Projects
-Security
-Insights
-Data-Structures/Leetcode Challenge/May/C++/Count Sorted Vowel Strings.cpp
-@Ayu-99
-Ayu-99 Rename ount Sorted Vowel Strings.cpp to Count Sorted Vowel Strings.cpp
-Latest commit 218f4f9 on May 11, 2022
- History
- 1 contributor
-43 lines (35 sloc)  830 Bytes
-
-
-// class Solution {
-// public:
-//     vector<char> vowels{'a','e','i','o','u'};
+/******************************************************************************
+how to set ith bit from the left.
+given n and i u should able to set bit i as a set 
+that is the question
+*******************************************************************************/
+void setibit(int n,int i){
+    int mask=(1<<i);
+    n=(mask|n);
     
-//     void solve(int n,int last,int& count){
-//         //base case 
-//         if(n==0){
-//             count++;
-//             return;
-//         }
-//         for(int i=0;i<5;i++){
-//             if(i>=last){
-//                 solve(n-1,i,count);
-//             }
-//         }
-//     }
-    
-//     int countVowelStrings(int n) {
-//          int count=0;
-//         solve(n,0,count);
-//         return count;
-//     }
-// };
-
-class Solution {
-public:
-    int countVowelStrings(int n) {
-        vector<int> dp(5, 1);
-        int ans = 0;
-        
-        while(--n){
-            for(int i=3; i>=0; i--){
-                dp[i] += dp[i+1];
-            }
-        }
-        
-        for(auto x:dp) ans += x;
-        
-        return ans;
-    }
-};
+}
