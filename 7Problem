@@ -1,0 +1,21 @@
+/******************************************************************************
+update the ith bit of a number from the right
+the updating bit could be mean anything like if i want it to be 0 or 1 anything 
+u function should work for both cases
+
+
+*******************************************************************************/
+
+void clearithbit(int n,int i){
+   //left shift << adding zero at the end  remember this part 
+    int mask=~(1<<i);   //making this run it just make 00100=11011 and doing and give the result which bit want to clear 
+    return (n&mask);
+}
+
+
+void updateithbit(int &n,int i ,int v){ //v =1 or 0
+    clearithbit()//written previously
+    int mask=(v<<i);//v==0 mask would be like this 00000000000000000000000 or v=1 mask=000000000000010000000000
+    return (n|mask);
+    
+}
