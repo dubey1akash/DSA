@@ -1,0 +1,10 @@
+/******************************************************************************
+given n u want to remove last i bit starting from left count from 0 index 
+which mean i=5 number should be 4 from 0.........4 
+
+
+*******************************************************************************/
+void lastibit(int &n,int i){
+    int mask=(-1<<i);
+    n=n&mask
+}
