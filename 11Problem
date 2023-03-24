@@ -1,0 +1,13 @@
+/******************************************************************************
+given a range for a number n and  u want to clear a range of bits in that
+which is represented by i and j and i strt from left and until right side of j end 
+and until that portion u want to clearbit 
+
+
+*******************************************************************************/
+void clearBitsinRange(int &n,int i,int j){
+    int a=(~0)<<(J+1);
+    int b=(1<<i)-1;
+    int mask=a|b;
+    n=n&mask;
+}
