@@ -1,0 +1,12 @@
+/******************************************************************************
+how to check if nubmer is power of 2 or not??
+
+*******************************************************************************/
+if((n&(n-1))==0){
+    cout<<"this number is power of 2";
+}
+as this is property of binary number
+if n is power of 2 like 4 =2^2 then doing n-1 which is 4 
+and doing end it should result as 0
+but this is not true for any other nuber like 5 and 4 as 
+5 is not power of 2 
