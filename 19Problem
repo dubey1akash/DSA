@@ -1,0 +1,13 @@
+/******************************************************************************
+count the number of set bit using heck
+
+*******************************************************************************/
+int countsetbits(int n){
+    int ans=0;
+    while(n>0){
+    //it removes the last set bit in a number
+        n=n&(n-1);
+        ans++;
+    }
+    return ans;
+}
