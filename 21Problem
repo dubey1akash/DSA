@@ -1,0 +1,14 @@
+/******************************************************************************
+given n u want to convert that number in binary
+
+
+*******************************************************************************/
+void convertToBinary(int n){
+    int p=1;
+    int ans=0;
+    while(n>0){
+        int lastBit=(n&1);
+        ans+=lastbit*p;
+        p=p*10;
+    }
+}
