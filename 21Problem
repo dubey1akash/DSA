@@ -10,5 +10,6 @@ void convertToBinary(int n){
         int lastBit=(n&1);
         ans+=lastbit*p;
         p=p*10;
+        n=(n>>1);
     }
 }
