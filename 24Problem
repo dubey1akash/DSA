@@ -1,0 +1,33 @@
+/******************************************************************************
+we have given an array where every number coming twice except 2 no which are 
+just diff find those
+
+
+*******************************************************************************/
+void uniqueNo(vector<int>arr){
+    int n=arr.size();
+    int res=0;
+    for(int i=0; i<n; i++){
+        res=res^arr[i];
+    }
+    int temp=res;
+    int p=0;
+    while((temp&1)==0){
+        p++;
+        temp>>1;
+    }
+    int setA;
+    int setB;
+    int mask=p<<1;
+    for(int i=0; i<arr.size();i++){
+        if((arr[i]&mask)>0){
+            setA=setA^arr[i];
+        }
+        else{
+            setB=setB^arr[i];
+        }
+    }
+    cout<<setA<<endl;
+    cout<<setB<<endl;
+    
+}
