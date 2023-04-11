@@ -1,3 +1,8 @@
+/******************************************************************************
+given a n length stick u want to cut itin length  using a , b ,c find the maximum cut u can do using  a ,b ,c to cut n 
+*****************************************************************************/
+
+
 #include <iostream>
 using namespace std;
 
