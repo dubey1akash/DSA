@@ -1,6 +1,7 @@
 /******************************************************************************
 Maximum Difference Problem which mean from i and j u should select i <j
 and j should be greater than i while choosing in the array 
+try to use the part of logic starting of the array until this how much is the result at ith index until 2 index u can use this concept then approach it
 
 
 *******************************************************************************/
