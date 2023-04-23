@@ -1,0 +1,47 @@
+/******************************************************************************
+Trapping rain water problem given an array which tell how much water is there in current cell
+u need to tell how much water can u store in whole array cell formation 
+*******************************************************************************/
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+int getWater(int arr[], int n)
+{
+	int res = 0;
+
+	for(int i = 1; i < n - 1; i++)
+	{
+		int res = 0;
+
+    	int lMax[n];
+    	int rMax[n];
+///u need to think how to form an array of left max until now 
+    	lMax[0] = arr[0];
+    	for(int i = 1; i < n; i++)
+    		lMax[i] = max(arr[i], lMax[i - 1]);
+
+///u need to think how to form an array of left max until now 
+
+    	rMax[n - 1] = arr[n - 1];
+    	for(int i = n - 2; i >= 0; i--)
+    		rMax[i] = max(arr[i], rMax[i + 1]);
+
+    	for(int i = 1; i < n - 1; i++)
+    		res = res + (min(lMax[i], rMax[i]) - arr[i]);
+    	
+    	return res;
+	}
+
+	return res;
+}
+
+
+int main() {
+	
+     int arr[] = {5, 0, 6, 2, 3}, n = 5;
+
+     cout<<getWater(arr, n);
+    
+}
